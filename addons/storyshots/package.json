@@ -11,7 +11,9 @@
   "scripts": {
     "build-storybook": "build-storybook",
     "prepare": "babel ./src --out-dir ./dist",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6006",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@storybook/channels": "^3.2.17",
@@ -19,7 +21,8 @@
     "babel-runtime": "^6.26.0",
     "global": "^4.3.2",
     "prop-types": "^15.6.0",
-    "read-pkg-up": "^3.0.0"
+    "read-pkg-up": "^3.0.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@storybook/addons": "^3.2.17",
@@ -29,5 +32,6 @@
     "@storybook/addons": "^3.2.17",
     "react": "*",
     "react-test-renderer": "*"
-  }
+  },
+  "snyk": true
 }
