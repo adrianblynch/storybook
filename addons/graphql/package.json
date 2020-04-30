@@ -17,16 +17,19 @@
   },
   "scripts": {
     "deploy-storybook": "storybook-to-ghpages",
-    "prepare": "node ../../scripts/prepare.js",
-    "storybook": "start-storybook -p 9001"
+    "prepare": "npm run snyk-protect && node ../../scripts/prepare.js",
+    "storybook": "start-storybook -p 9001",
+    "snyk-protect": "snyk protect"
   },
   "dependencies": {
     "global": "^4.3.2",
     "graphiql": "^0.11.10",
     "graphql": "^0.11.7",
-    "prop-types": "^15.6.0"
+    "prop-types": "^15.6.0",
+    "snyk": "^1.316.1"
   },
   "peerDependencies": {
     "react": "*"
-  }
+  },
+  "snyk": true
 }
