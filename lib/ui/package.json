@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@hypnosphi/fuse.js": "^3.0.9",
-    "@storybook/components": "^3.2.17",
+    "@storybook/components": "^4.0.0",
     "@storybook/mantra-core": "^1.7.0",
     "@storybook/react-fuzzy": "^0.4.3",
     "@storybook/react-komposer": "^2.0.0",
