@@ -30,7 +30,7 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "expo": "^22.0.0",
+    "expo": "^50.0.0",
     "prop-types": "^15.5.0",
     "react": "~16.0.0",
     "react-native": "~0.49.3"
